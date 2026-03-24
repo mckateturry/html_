@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Los <meta> son SEO (Optimización en buscadores = Ayudan a la página web-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Katherine Miranda" />
+    <meta name="description" content="diseño e impresión" />
+    <meta
+      name="keywords"
+      content="diseño, impresión, creatividad, papelería, stickers"
+    />
+
+    <title>Diseño e Impresión</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+
+  <body>
+    <!-- HEADER: Se utiliza para mostrar el menú de navegación, 
+   donde se puede colocar el logo y los enlaces de navegación -->
+    <header>
+      <div class="nav-container">
+        <h1>Diseño e Impresión</h1>
+
+        <!-- <nav>: navegación principal del sitio -->
+        <nav>
+          <ul>
+            <!-- Menú: Está estructurado como una lista.
+           al colocar "#" se utiliza para crear un enlace que apunta a la misma página (placeholder),
+           es para cuando aún no tienes definido la url -->
+            <li><a href="#">Bautizo</a></li>
+            <li><a href="#">Comunión</a></li>
+            <li><a href="#">Matrimonio</a></li>
+            <li><a href="#">Cumpleaños</a></li>
+            <li><a href="#">Regalos</a></li>
+            <li><a href="#">Papelería</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+      <h2>Diseños que hacen especial cada momento</h2>
+      <p>
+        Papelería personalizada para eventos, emprendimientos y regalos únicos.
+      </p>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <section>
+      <div class="grid">
+        <article>
+          <!-- <article> es un elemento semántico que representa una sección independiente del contenido, en este caso cada producto es un artículo. -->
+          <!--img src="ruta/a/la/imagen.jpg" o como en esté caso coloque el vinculo de la imagen, ya que no está en una carpeta sino en la web / 
+            alt="Descripción de la imagen" Es fundamental que haya una descripción alternativa para mejorar la accesibilidad -->
+          <img
+            src="assets/img/bautizo.jpg"
+            alt="Invitación Bautizo"
+            style="width: 100%; border-radius: 12px; margin-bottom: 15px"
+          />
+          <h3>Invitación Bautizo</h3>
+          <p>Diseño delicado personalizado con nombre y fecha.</p>
+          <span class="precio">$6.990</span>
+        </article>
+
+        <article>
+          <img
+            src="assets/img/matrimonio.jpg"
+            alt="Kit Matrimonio"
+            style="width: 100%; border-radius: 12px; margin-bottom: 15px"
+          />
+          <h3>Kit Matrimonio</h3>
+          <p>Invitaciones + etiquetas + recuerdos.</p>
+          <span class="precio">$45.000</span>
+        </article>
+
+        <article>
+          <img
+            src="assets/img/stickers.jpg"
+            alt="Stickers Cumpleaños"
+            style="width: 93%; border-radius: 12px; margin-bottom: 15px"
+          />
+          <h3>Stickers de Cumpleaños</h3>
+          <p>Pack decorativo personalizado.</p>
+          <span class="precio">$6.500</span>
+        </article>
+
+        <article>
+          <img
+            src="assets/img/regalo.jpg"
+            alt="Tarjetas Regalo"
+            style="width: 100%; border-radius: 12px; margin-bottom: 15px"
+          />
+          <h3>Tarjetas de Regalo</h3>
+          <p>Diseño elegante para cualquier ocasión.</p>
+          <span class="precio">$3.800</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer>
+      <div class="footer-container">
+        <div>
+          <h3>Contáctame</h3>
+          <p>Quieres algo personalizado? Escríbeme 💌</p>
+
+          <!-- Formulario: Los Formularios son elementos que permiten a los usuarios ingresar información,
+         esto es una herramienta estratégica para recopilar datos de los clientes -->
+          <form>
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo" required />
+            <textarea
+              rows="3"
+              placeholder="Descripción de tu proyecto"
+            ></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 Katherine Miranda - Todos los derechos reservados
+      </div>
+    </footer>
+  </body>
+</html>
